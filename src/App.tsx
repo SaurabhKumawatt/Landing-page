@@ -114,10 +114,10 @@ function App() {
 
                       {/* Badge - Bottom Right */}
                     </div>
-                      <div className="absolute -bottom-2 right-7 md:bottom-3 md:right-2 bg-[#182432] text-white text-sm md:text-base font-semibold px-4 py-2 rounded-xl shadow-lg flex items-center space-x-1">
-                        <img src="/assets/images/stravix.png" alt="" className='w-20' />
-                        <p className='font-serif'>Affiliate</p>
-                      </div>
+                    <div className="absolute -bottom-2 right-7 md:bottom-3 md:right-2 bg-[#182432] text-white text-sm md:text-base font-semibold px-4 py-2 rounded-xl shadow-lg flex items-center space-x-1">
+                      <img src="/assets/images/stravix.png" alt="" className='w-20' />
+                      <p className='font-serif'>Affiliate</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,6 +221,93 @@ function App() {
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Housewife Feedback Section */}
+        <section className="py-12 bg-gradient-to-br from-[#FFF8F0] via-white to-[#FDFBF7]">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#C7A055] mb-2">
+                Special for Housewives
+              </h2>
+              <h3 className="text-3xl md:text-4xl font-bold text-[#182432] mb-4">
+                Ghar se Kamaya, Khud pe Gaurav
+              </h3>
+              <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+                Dekhiye un housewives ki kahaniyan jinhone StraviX ke saath apni pehli earning ki aur apna sapna pura kiya.
+              </p>
+            </div>
+
+            {/* Video Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Video 1 */}
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="relative aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/yI1Zf8gZTcs"
+                    title="Housewife Testimonial 1"
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4 bg-[#182432] text-white">
+                  <p className="font-medium text-sm">
+                    "Ghar ke kaam ke saath apna earning source create kiya – life badal gayi."
+                  </p>
+                </div>
+              </div>
+
+              {/* Video 2 */}
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="relative aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/39OZSnT-XcM"
+                    title="Housewife Testimonial 2"
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4 bg-[#182432] text-white">
+                  <p className="font-medium text-sm">
+                    "Pehli baar apni income ka gift family ko diya – best feeling ever."
+                  </p>
+                </div>
+              </div>
+
+              {/* Video 3 */}
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="relative aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/n0vG5YcZk9M"
+                    title="Housewife Testimonial 3"
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4 bg-[#182432] text-white">
+                  <p className="font-medium text-sm">
+                    "StraviX ne mujhe self-confidence diya – ab main financially independent hoon."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-12">
+              <button
+                onClick={() => setShowWhatsAppPopup(true)}
+                className="bg-[#25D366] hover:bg-[#20C157] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                Message Me on WhatsApp Now
+              </button>
             </div>
           </div>
         </section>
@@ -472,7 +559,7 @@ function App() {
                           <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/Z3zOOfIegus"
+                            src="https://www.youtube.com/embed/Z6AuXUE8gU4"
                             title="Success Story 1"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -482,15 +569,14 @@ function App() {
                           ></iframe>
                         </div>
                       </div>
-
                       {/* Video 2 */}
                       <div className="relative w-54 md:w-64 flex-shrink-0">
                         <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
                           <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/nUIUXvXtlKU"
-                            title="Success Story 2"
+                            src="https://www.youtube.com/embed/-wxzJuu7uZU"
+                            title="Success Story 1"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
@@ -506,7 +592,24 @@ function App() {
                           <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/oHcxSlUB-Ms"
+                            src="https://www.youtube.com/embed/Mqkn0yj7gsk"
+                            title="Success Story 2"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 4 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/_IGTuuiDWwc"
                             title="Success Story 3"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -517,15 +620,13 @@ function App() {
                         </div>
                       </div>
 
-
-
                       {/* Video 5 */}
                       <div className="relative w-54 md:w-64 flex-shrink-0">
                         <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
                           <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/Q2OE4NEpwpI"
+                            src="https://www.youtube.com/embed/lCYeacWH_Os"
                             title="Success Story 5"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -542,7 +643,7 @@ function App() {
                           <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/Zo0ni6Yp_0g"
+                            src="https://www.youtube.com/embed/Ma7UzZ--YUM"
                             title="Success Story 6"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -559,7 +660,7 @@ function App() {
                           <iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/a0v1Gxmp760"
+                            src="https://www.youtube.com/embed/7qrKag2C8VQ"
                             title="Success Story 7"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -579,7 +680,169 @@ function App() {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-gray-600 italic">Watch how StraviX changed their lives.</p>
+                  <p className="text-gray-600 italic pb-10">Watch how StraviX changed their lives.</p>
+                </div>
+
+                <div className="relative mb-8">
+                  <div className="overflow-x-auto scrollbar-hide">
+                    <div className="flex space-x-4 pb-4" style={{ width: 'max-content' }}>
+                      {/* Video 1 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/52BuhMuSrt0"
+                            title="Success Story 1"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+                      {/* Video 2 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/7QZDGr_1AbU"
+                            title="Success Story 1"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 3 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/dZbLIkSn540"
+                            title="Success Story 2"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 4 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/6jQzbZSY0Xg"
+                            title="Success Story 3"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 5 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/h4CGrIlZIQI"
+                            title="Success Story 5"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 6 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/d1Rm98pCRPg"
+                            title="Success Story 6"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 7 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/BlFTtW6PF5Q"
+                            title="Success Story 7"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+
+                      {/* Video 8 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/OroMuK-n2Wc"
+                            title="Success Story 7"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+                      {/* Video 9 */}
+                      <div className="relative w-54 md:w-64 flex-shrink-0">
+                        <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/oDfhizBBIs4"
+                            title="Success Story 7"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Scroll indicator */}
+                  <div className="flex justify-center mt-4 md:hidden">
+                    <p className="text-sm text-gray-500">← Swipe to see more →</p>
+                  </div>
                 </div>
               </div>
 
@@ -601,7 +864,7 @@ function App() {
           </div>
         </section>
 
-        {/* Presentation Video Section */}
+        {/* Legal And registered Section */}
         <section className="py-10 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
@@ -939,13 +1202,13 @@ function App() {
         </section>
 
 
-        {/* Team Earnings Section */}
+        {/* My Jouerny Section */}
         <section className="py-16 bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50">
           <div className="max-w-6xl mx-auto px-6">
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-[#182432]">
-              From <span className="text-[#C7A055]">Zero</span> to <span className="text-[#C7A055]">₹50,000+ Monthly</span>
+              From <span className="text-[#C7A055]">Zero</span> to <span className="text-[#C7A055]">₹60,000+ Monthly</span>
             </h2>
 
             {/* Timeline */}
@@ -968,7 +1231,7 @@ function App() {
                 <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mb-4 mx-auto shadow-inner">
                   <span className="text-3xl">😊</span>
                 </div>
-                <h3 className="font-bold text-lg text-[#182432]">First ₹2,000</h3>
+                <h3 className="font-bold text-lg text-[#182432]">First ₹8,000</h3>
                 <p className="text-gray-600 text-sm">Pehli earning ka excitement</p>
               </div>
 
@@ -981,7 +1244,7 @@ function App() {
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto shadow-inner">
                   <span className="text-3xl">🎉</span>
                 </div>
-                <h3 className="font-bold text-lg text-[#182432]">₹50,000+ Monthly</h3>
+                <h3 className="font-bold text-lg text-[#182432]">₹60,000+ Monthly</h3>
                 <p className="text-gray-600 text-sm">Consistent income & stability</p>
               </div>
             </div>
@@ -1003,13 +1266,26 @@ function App() {
             </div>
 
             {/* YouTube Videos */}
-            <div className="grid md:grid-cols-2 gap-10 mb-16">
+            <div className="grid md:grid-cols-3 gap-10 mb-16">
               {/* Video 1 */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
                 <h3 className="text-xl font-bold text-[#182432] mb-4 text-center">My Journey</h3>
                 <div className="relative aspect-[9/16]">
                   <iframe
-                    src="https://www.youtube.com/embed/yI1Zf8gZTcs"
+                    src="https://www.youtube.com/embed/QmSTA3cNLDU"
+                    title="My Journey"
+                    className="absolute top-0 left-0 w-full h-full rounded-xl"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <h3 className="text-xl font-bold text-[#182432] mb-4 text-center">Awards</h3>
+                <div className="relative aspect-[9/16]">
+                  <iframe
+                    src="https://www.youtube.com/embed/fKPsLb8ys1Q"
                     title="My Journey"
                     className="absolute top-0 left-0 w-full h-full rounded-xl"
                     frameBorder="0"
@@ -1021,10 +1297,10 @@ function App() {
 
               {/* Video 2 */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
-                <h3 className="text-xl font-bold text-[#182432] mb-4 text-center">Meri Mehnat ka Pehla Tohfa</h3>
+                <h3 className="text-xl font-bold text-[#182432] mb-4 text-center">Laddu Gopal ke Liye Gold Ki chain</h3>
                 <div className="relative aspect-[9/16]">
                   <iframe
-                    src="https://www.youtube.com/embed/39OZSnT-XcM"
+                    src="https://www.youtube.com/embed/qtwRteKfU90"
                     title="Meri Mehnat ka Pehla Tohfa"
                     className="absolute top-0 left-0 w-full h-full rounded-xl"
                     frameBorder="0"

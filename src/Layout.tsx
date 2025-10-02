@@ -9,7 +9,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Left - Name */}
         <a href="/" className="flex items-center space-x-3">
-        <img src="/favicon.ico" alt="Sakila Mandar logo" className="w-8" />
+          <img src="/favicon.ico" alt="Sakila Mandar logo" className="w-8" />
           <h1 className="text-xl font-bold text-[#C7A055]">Sakila Mandar</h1>
         </a>
 
@@ -76,7 +76,8 @@ const Footer = () => {
   return (
     <footer className="bg-[#182432] text-white py-10">
       <div className="max-w-6xl mx-auto px-4 flex justify-center flex-col items-center">
-        <img src="/assets/images/stravix.png" alt="" className="w-48" />
+        <img src="/assets/images/stravix.png" alt="StraviX Logo" className="w-48 mb-4" />
+
         <h3 className="text-xl font-bold text-[#C7A055] mb-6">
           Connect with Sakila Mandar
         </h3>
@@ -91,14 +92,6 @@ const Footer = () => {
           >
             <Instagram className="w-6 h-6 text-white" />
           </a>
-          {/* <a
-            href="https://youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-red-600 p-3 rounded-full hover:scale-110 transition-transform"
-          >
-            <Youtube className="w-6 h-6 text-white" />
-          </a> */}
           <a
             href="https://wa.me/917988633326"
             target="_blank"
@@ -110,12 +103,18 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <p className="text-gray-400 text-sm">
-          ©2025 Sakila Mandar - All rights reserved.
-        </p>
+        <div className="text-center space-y-2">
+          <p className="text-gray-400 text-sm">
+            © 2025 Sakila Mandar - All rights reserved.
+          </p>
+          <p className="text-sm text-[#C7A055] font-semibold tracking-wide">
+            Created with ❤️ by <span className="text-white">StraviX</span>
+          </p>
+        </div>
       </div>
     </footer>
   );
 };
+
 
 export { Header, Footer };
